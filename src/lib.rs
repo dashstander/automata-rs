@@ -4,6 +4,12 @@ struct Permutation<const N: usize> {
     data: [usize; N]
 }
 
+
+#[derive(Debug)]
+struct SymmetricGroup<const N: usize> {
+    elements: Vec<Permutation<N>>
+}
+
   
 impl<const N: usize> Permutation<N> {
   
